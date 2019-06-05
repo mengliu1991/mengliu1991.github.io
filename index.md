@@ -2,7 +2,7 @@
 layout: default
 ---
 ## About Me
-I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao China, advised by [Prof. Baoquan Chen](https://cfcs.pku.edu.cn/baoquan/) and [Prof. Liqiang Nie](http://ir.sdu.edu.cn/~liqiangnie/index.html). My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in computational mathematics from Dalian University of Technology, China, in 2016. I did internship at National University of Singapore in 2018, advised by [Prof. Tat-Seng Chua](https://www.comp.nus.edu.sg/cs/bio/chuats/). 
+I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao China, advised by [Prof. Baoquan Chen](https://cfcs.pku.edu.cn/baoquan/) and [Prof. Liqiang Nie](http://ir.sdu.edu.cn/~liqiangnie/index.html). My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in computational mathematics from Dalian University of Technology, China, in 2016. I did internship at National University of Singapore from 2017 to 2018, advised by [Prof. Tat-Seng Chua](https://www.comp.nus.edu.sg/cs/bio/chuats/). 
 
 ## Education
 <div align="left">
@@ -21,7 +21,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 <div align="left">
         <strong> Dalian University of Technology, Dalian, China (Sep 2013 - Jun 2016) </strong>
           <a href="https://www.dlut.edu.cn/" target="_blank" rel="external">
-            <img border="0" src="dlut_Logo.png" align="right" width="70" height="70">
+            <img border="0" src="dlut_Logo.jpg" align="right" width="70" height="70">
           </a> 
         <ul>
         <li>
@@ -34,7 +34,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 <div align="left">
         <strong> Henan University, Kaifeng, China (Sep 2009 - Jun 2013) </strong>
           <a href="http://www.henu.edu.cn/" target="_blank" rel="external">
-            <img border="0" src="henan_Logo.png" align="right" width="70" height="70">
+            <img border="0" src="henan_Logo.jpg" align="right" width="70" height="70">
           </a> 
         <ul>
         <li>
@@ -45,54 +45,17 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
       </div>
 
 ## Experience
-<div align="left">
-        <strong> Google Cloud, Sunnyvale, CA, USA (May 2018 - Nov 2018) </strong>
-          <a href="https://cloud.google.com/vision/" target="_blank" rel="external">
-            <img border="0" src="google-logo.png" align="right" width="60" height="60">
-          </a> 
-        <ul>
-        <li>
-          Position: Software Engineering Intern</li>
-        <li>
-          Semi-supervised Object Detection </li>
-      </ul>      
-      </div>
-      
-<div align="left">
-        <strong> Google Research, Mountain View, CA, USA (May 2017 - Aug 2017) </strong>
-          <a href="https://research.google.com/" target="_blank" rel="external">
-            <img border="0" src="google-logo.png" align="right" width="60" height="60">
-          </a> 
-        <ul>
-        <li>
-          Position: Software Engineering Intern</li>
-        <li>
-          Super large scale (100K classes) image classification, <a href="https://arxiv.org/abs/1711.07607" target="_blank" rel="external"> tech report </a>. </li>
-      </ul>      
-      </div>
-
-<div align="left">
-        <strong> Sensetime, Beijing, China (Feb 2015 - Jun 2015) </strong>
-          <a href="https://www.sensetime.com/about?lang=en-us" target="_blank" rel="external">
-            <img border="0" src="sensetime-logo.png" align="right" width="61" height="65">
-          </a> 
-        <ul>
-        <li>
-          Position: Research Intern</li>
-        <li>
-          Human pose estimation with deep CNN. </li>
-      </ul>      
-      </div>
      
 <div align="left">
-        <strong> Stanford University, Stanford, CA, USA (Jun 2014 - Aug 2014) </strong>
+        <strong> National University of Singapore, NUS, Singapore  (Oct 2017 - Oct 2018) </strong>
           <a target="_blank" rel="external">
-            <img border="0" src="stanford-logo.png" align="right" width="65" height="65">
+            <img border="0" src="nus_logo.png" align="right" width="65" height="65">
           </a> 
         <ul>
         <li>
-          Position: Research Intern, in UGVR program</li>
-        <li>Bladder 3D reconstruction from endoscope images using SFM. </li>
+          Position: Research Intern, in NEXT++, School of Computing </li>
+                <img border="0" src="next-logo.png" align="right" width="65" height="65">
+        <li>Cross-modal Moment Retrieval in videos via Language. </li>
       </ul>      
       </div>
       
