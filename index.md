@@ -64,25 +64,13 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 
 **Meng Liu**, Xiang Wang, Liqiang Nie, Qi Tian, Baoquan Chen, Tat-Seng Chua,  "_Cross-modal Moment Localization in Videos_", ACM Conference on Multimedia (**ACM MM**), 2018. [code](https://acmmm18.wixsite.com/role)
 
-**Jiyang Gao\***, Runzhou Ge\*, Kan Chen, Ram Nevatia, "_Motion-Appearance Co-Memory Networks for Video Question Answering_", in IEEE Conference on Computer Vision and Pattern Recognition (**CVPR**), 2018, [arxiv](https://arxiv.org/pdf/1803.10906.pdf) (\* indicates equal contribution)
+**Meng Liu**, Xiang Wang, Liqiang Nie, Baoquan Chen, Tat-Seng Chua, "_Attentive Moment Retrieval in Videos_",  ACM SIGIR 2018 Conference on Research and Development in Information Retrieval, (**ACM SIGIR**), 2018. [code](https://sigir2018.wixsite.com/acrn) 
 
-Kan Chen, **Jiyang Gao**, Ram Nevatia, "_Knowledge Aided Consistency for Weakly Supervised Phrase Grounding_", in IEEE Conference on Computer Vision and Pattern Recognition (**CVPR**), 2018, [arxiv](https://arxiv.org/pdf/1803.03879.pdf), [code](https://github.com/kanchen-usc/KAC-Net) 
+Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueying Qin, "_Sparsely Grouped Multi-Task Generative Adversarial Networks for Facial Attribute Manipulation_", ACM Conference on Multimedia, (**ACM SIGIR**), 2018. 
 
-**Jiyang Gao**, Zijian (James) Guo, Zhen Li, Ram Nevatia, "_Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN_", tech report for the summer intern at Google Research, [arxiv](https://arxiv.org/abs/1711.07607)
+**Meng Liu**, Liqiang Nie, Xiang Wang, Qi Tian, Baoquan Chen, "_Online Data Organizer: Micro-video Categorization by Structure-guided Multimodal Dictionary Learning_", IEEE Transactions on Image Processing (**IEEE TIP**), 2019. [code](http://acmmm17.wixsite.com/intimate)
 
-**Jiyang Gao**, Chen Sun, Zhenheng Yang and Ram Nevatia, "_TALL: Temporal Activity Localization via Language Query_", in International Conference on Computer Vision (**ICCV**), 2017, **[Spotlight]**, [arxiv](https://arxiv.org/abs/1705.02101), [code](https://github.com/jiyanggao/TALL), [video](https://www.youtube.com/watch?v=ZDO064ccYS0)
-
-**Jiyang Gao\***, Zhenheng Yang*, Kan Chen, Chen Sun and Ram Nevatia, "_TURN TAP: Temporal Unit Regression Network for Temporal Action Proposals_", in International Conference on Computer Vision (**ICCV**), 2017, [arxiv](https://arxiv.org/abs/1703.06189), [code](https://github.com/jiyanggao/TURN-TAP) (\* indicates equal contribution)
-
-**Jiyang Gao**, Zhenheng Yang and Ram Nevatia, "_Cascaded Boundary Regression for Temporal Action Detection_", in British Machine Vision Conference (**BMVC**), 2017, [arxiv](https://arxiv.org/abs/1705.01180), [code](https://github.com/jiyanggao/CBR), [THUMOS-14 results](https://github.com/jiyanggao/CBR-results) 
-
-**Jiyang Gao**, Zhenheng Yang and Ram Nevatia, "_RED: Reinforced Encoder-Decoder Network for Action Anticipation_", in British Machine Vision Conference (**BMVC**), 2017 **[Oral]**, [arxiv](https://arxiv.org/abs/1707.04818), [video](https://www.youtube.com/watch?v=wewtVcMzet0&t=6s)
-
-Zhenheng Yang, **Jiyang Gao** and Ram Nevatia, "_Spatio-Temporal Action Detection with Cascade Proposal and Location Anticipation_", in British Machine Vision Conference (**BMVC**), 2017 **[Oral]**, [arxiv](https://arxiv.org/abs/1708.00042), [video](https://www.youtube.com/watch?v=oxPxY0aB4eI) 
-
-**Jiyang Gao** and Ram Nevatia, “_Learning Action Concept Trees and Semantic Alignment Networks from Image-Description Data_” in Asian Conference on Computer Vision (**ACCV**), 2016 **[Oral]**, [arxiv](https://arxiv.org/abs/1609.02284)
-
-**Jiyang Gao**, Chen Sun and Ram Nevatia, “_ACD: Action Concept Discovery from Image-Sentence Corpora_” in ACM International Conference on Multimedia Retrieval (**ACM ICMR**), 2016 **[Oral]**, [arxiv](https://arxiv.org/abs/1604.04784)
+Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
 
 ## Professional Services
 Conference Reviewer for ACM MM'17, CVPR'18, ACCV'18, WACV'19, CVPR'19
