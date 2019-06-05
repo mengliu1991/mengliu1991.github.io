@@ -8,7 +8,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 <div align="left">
         <strong> Shandong University, Qingdao, China (Sep 2016 - Dec 2019) </strong>
           <a href="http://www.sdu.edu.cn/" target="_blank" rel="external">
-            <img border="0" src="sdu_logo.jpg" align="right" width="75" height="75">
+            <img border="0" src="sdu_logo.jpg" align="right" width="80" height="80">
           </a> 
         <ul>
         <li>
