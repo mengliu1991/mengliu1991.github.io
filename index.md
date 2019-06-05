@@ -6,7 +6,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 
 ## Education
 <div align="left">
-        <strong> University of Southern California, CA, USA (Aug 2015 - Dec 2018) </strong>
+        <strong> Shandong University, Qingdao, China (Sep 2016 - Dec 2019) </strong>
           <a href="https://www.usc.edu/" target="_blank" rel="external">
             <img border="0" src="usc_logo.jpg" align="right" width="70" height="70">
           </a> 
