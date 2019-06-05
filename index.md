@@ -2,7 +2,7 @@
 layout: default
 ---
 ## About Me
-I'm Jiyang Gao (高继扬), I currently work in Waymo as a perception software engineer. I passed my PhD thesis defense at USC in 2018 Nov, advised by [Prof. Ram Nevatia](http://iris.usc.edu/people/nevatia/). My research focused on computer vision, especially on **temporal perception and reasoning** in videos. I obtained my B.S. degree from Tsinghua University in 2015. I did internship at Sensetime in 2015, at Google Research during 2017 summer, at Google Cloud AI in 2018. 
+I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao China, advised by Prof. Baoquan Chen (https://cfcs.pku.edu.cn/baoquan/) and Prof. Liqiang Nie (http://ir.sdu.edu.cn/~liqiangnie/index.html). My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in computational mathematics from Dalian University of Technology, China, in 2016. I did internship at National University of Singapore in 2018, advised by Prof. Tat-Seng Chua (https://www.comp.nus.edu.sg/cs/bio/chuats/). 
 
 ## Education
 <div align="left">
