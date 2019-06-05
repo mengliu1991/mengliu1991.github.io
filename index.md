@@ -60,7 +60,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
       </div>
       
 ## Publications
-**Jiyang Gao\***, Kan Chen\*, Ram Nevatia, "_CTAP: Complementary Temporal Action Proposal Generation_", European Conference on Computer Vision (**ECCV**), 2018 (\* indicates equal contribution)
+**Meng Liu\**, Liqiang Nie, Meng Wang, Baoquan Chen, "_Towards Micro-video Understanding by Joint Sequential-Sparse Modeling_", ACM Conference on Multimedia  (**ACM MM**), 2018.[code](https://acmmm17.wixsite.com/eastern)
 
 **Jiyang Gao**, Ram Nevatia, "_Revisiting Temporal Modeling for Video-based Person ReID_", tech report, [arxiv](https://arxiv.org/pdf/1805.02104.pdf), [code](https://github.com/jiyanggao/Video-Person-ReID)
 
