@@ -54,7 +54,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
         <ul>
         <li>
           Position: Research Intern, in NEXT++, School of Computing </li>
-                <img border="0" src="nus_logo.png" align="right" width="65" height="65">
+                <img border="0" src="nus_logo.png" align="right" width="70">
         <li>Cross-modal Moment Retrieval in videos via Language. </li>
       </ul>      
       </div>
