@@ -25,12 +25,24 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
           </a> 
         <ul>
         <li>
-          Bachelor of Engineering (B.E), Microelectronics</li>
+          Master of Science (M.S), Computational Mathematics</li>
+        <li>
+          Advisor: Prof. Xiuping Liu</li>
+      </ul>      
+      </div>
+      
+<div align="left">
+        <strong> Henan University, Kaifeng, China (Sep 2009 - Jun 2013) </strong>
+          <a href="http://www.henu.edu.cn/" target="_blank" rel="external">
+            <img border="0" src="henan_Logo.png" align="right" width="70" height="70">
+          </a> 
+        <ul>
+        <li>
+          Bachelor of Science (B.S), Mathematics and Applied Mathematics</li>
         <li>
           Graduated with Excellent Thesis Award</li>
       </ul>      
       </div>
-
 
 ## Experience
 <div align="left">
