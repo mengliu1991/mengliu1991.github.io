@@ -60,9 +60,9 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
       </div>
       
 ## Publications
-**Meng Liu**, Liqiang Nie, Meng Wang, Baoquan Chen, "_Towards Micro-video Understanding by Joint Sequential-Sparse Modeling_", ACM Conference on Multimedia  (**ACM MM**), 2018. [code](https://acmmm17.wixsite.com/eastern)
+**Meng Liu**, Liqiang Nie, Meng Wang, Baoquan Chen, "_Towards Micro-video Understanding by Joint Sequential-Sparse Modeling_", ACM Conference on Multimedia  (**ACM MM**), 2017. [code](https://acmmm17.wixsite.com/eastern)
 
-**Jiyang Gao**, Ram Nevatia, "_Revisiting Temporal Modeling for Video-based Person ReID_", tech report, [arxiv](https://arxiv.org/pdf/1805.02104.pdf), [code](https://github.com/jiyanggao/Video-Person-ReID)
+**Meng Liu**, Xiang Wang, Liqiang Nie, Qi Tian, Baoquan Chen, Tat-Seng Chua,  "_Cross-modal Moment Localization in Videos_", ACM Conference on Multimedia (**ACM MM**), 2018. [code](https://acmmm18.wixsite.com/role)
 
 **Jiyang Gao\***, Runzhou Ge\*, Kan Chen, Ram Nevatia, "_Motion-Appearance Co-Memory Networks for Video Question Answering_", in IEEE Conference on Computer Vision and Pattern Recognition (**CVPR**), 2018, [arxiv](https://arxiv.org/pdf/1803.10906.pdf) (\* indicates equal contribution)
 
