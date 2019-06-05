@@ -73,24 +73,35 @@ Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueyin
 Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
 
 ## Professional Services
-Conference Reviewer for ACM MM'17, CVPR'18, ACCV'18, WACV'19, CVPR'19
+Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019.
 
-Journal Reviewer for IEEE Transactions on Multimedia, IEEE Transactions on Cybernetics, Pattern Recognition and Computer Vision and Image Understanding (CVIU)
+Journal Reviewer for Information Sciences, Journal of Visual Communication, and Multimedia Systems Journal.
 
 ## Awards
-Annenberg Graduate Fellowship at University of Southern California, 2015
+ACM SIGIR 18 Student Travel Grant, 2018
 
-Excellent Bachelor Thesis at Tsinghua University, 2015
+ACM MM 18 Student Travel Grant, 2018
 
-Changhong Scholarship at Tsinghua University, 2014
+Outstanding Graduate Student at Shandong University, 2018
 
-First Prize of 31st “Challenge Cup” Student Academic Competition of Tsinghua University (as Team Leader), 2013
+First Class Doctoral Academic Scholarship at Shandong University, 2018
 
+Huawei Scholarship at Shandong University, 2018
 
-<div align="center">
-        <strong>This page has been visited for
-          <a href="http://www.amazingcounters.com" target="_blank" rel="external">
-            <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221443&c=9664642" alt="AmazingCounters.com">
-          </a> times</strong>
-      </div>
+ACM MM 17 Student Travel Grant, 2017
+
+Doctoral Academic Scholarship at Shandong University, 2017
+
+Outstanding Graduates at Dalian University of Technology, 2016
+
+National Scholarship, 2015
+
+Dalian University of Technology Scholarship, 2013-2016
+
+Outstanding Graduates at Henan University, 2013
+
+Outstanding students at Henan University, 2009-2013
+
+Henan University Scholarship, 2009-2013
+
       
