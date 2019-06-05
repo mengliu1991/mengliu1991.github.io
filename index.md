@@ -21,7 +21,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 <div align="left">
         <strong> Dalian University of Technology, Dalian, China (Sep 2013 - Jun 2016) </strong>
           <a href="https://www.dlut.edu.cn/" target="_blank" rel="external">
-            <img border="0" src="dlut-logo.jpg" align="right" width="70" height="70">
+            <img border="0" src="dlut_logo.jpg" align="right" width="70" height="70">
           </a> 
         <ul>
         <li>
