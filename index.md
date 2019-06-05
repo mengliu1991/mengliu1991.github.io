@@ -19,9 +19,9 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
       </div>
 
 <div align="left">
-        <strong> Tsinghua University, Beijing, China (Aug 2011 - Jun 2015) </strong>
-          <a href="http://www.tsinghua.edu.cn/publish/newthuen/" target="_blank" rel="external">
-            <img border="0" src="Tsinghua_Logo.png" align="right" width="70" height="70">
+        <strong> Dalian University of Technology, Dalian, China (Sep 2013 - Jun 2016) </strong>
+          <a href="https://www.dlut.edu.cn/" target="_blank" rel="external">
+            <img border="0" src="dlut_Logo.png" align="right" width="70" height="70">
           </a> 
         <ul>
         <li>
