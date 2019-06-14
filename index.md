@@ -66,7 +66,7 @@ I'm Meng Liu (刘萌), I currently a PhD student of Shandong University, Qingdao
 
 **Meng Liu**, Xiang Wang, Liqiang Nie, Baoquan Chen, Tat-Seng Chua, "_Attentive Moment Retrieval in Videos_",  ACM SIGIR 2018 Conference on Research and Development in Information Retrieval, (**ACM SIGIR**), 2018. [code](https://sigir2018.wixsite.com/acrn) 
 
-Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueying Qin, "_Sparsely Grouped Multi-Task Generative Adversarial Networks for Facial Attribute Manipulation_", ACM Conference on Multimedia, (**ACM SIGIR**), 2018. 
+Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueying Qin, "_Sparsely Grouped Multi-Task Generative Adversarial Networks for Facial Attribute Manipulation_", ACM Conference on Multimedia, (**ACM MM**), 2018. 
 
 **Meng Liu**, Liqiang Nie, Xiang Wang, Qi Tian, Baoquan Chen, "_Online Data Organizer: Micro-video Categorization by Structure-guided Multimodal Dictionary Learning_", IEEE Transactions on Image Processing (**IEEE TIP**), 2019. [code](http://acmmm17.wixsite.com/intimate)
 
