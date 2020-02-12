@@ -80,9 +80,9 @@ Tian Gan, Shaokun Wang, **Meng Liu**, Xumeng Song, Yiyang Yao and Liqiang Nie, "
 
 Hao Jiang, Wenjie Wang, **Meng Liu**, Liqiang Nie, Ling-Yu Duan and Changsheng Xu, "_Market2Dish: A Health-aware Food Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019. 
 
-Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**CIKM**), 2019.
+Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**ACM CIKM**), 2019.
 
-Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**WSDM**), 2019. 
+Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2019. 
 
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019.
