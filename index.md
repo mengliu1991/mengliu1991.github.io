@@ -72,7 +72,18 @@ Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueyin
 
 Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
 
-Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, 2019.
+Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, (**Book**), 2019.
+
+Yongqi Li, **Meng Liu**, Jianhua Yin, Chaoran Cui, Xin-Shun Xu and Liqiang Nie, "_Routing Micro-videos via A Temporal Graph-guided Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019.
+
+Tian Gan, Shaokun Wang, **Meng Liu**, Xumeng Song, Yiyang Yao and Liqiang Nie, "_Seeking Micro-influencers for Brand Promotion_", ACM Conference on Multimedia, (**ACM MM**), 2019. 
+
+Hao Jiang, Wenjie Wang, **Meng Liu**, Liqiang Nie, Ling-Yu Duan and Changsheng Xu, "_Market2Dish: A Health-aware Food Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019. 
+
+Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**CIKM**), 2019.
+
+Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**WSDM**), 2019. 
+
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019.
 
