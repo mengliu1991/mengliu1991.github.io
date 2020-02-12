@@ -116,4 +116,10 @@ Outstanding students at Henan University, 2009-2013
 
 Henan University Scholarship, 2009-2013
 
+<div align="center">
+        <strong>This page has been visited for
+          <a href="http://www.amazingcounters.com" target="_blank" rel="external">
+            <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221443&c=9664642" alt="AmazingCounters.com">
+          </a> times</strong>
+      </div>
       
