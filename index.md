@@ -72,6 +72,7 @@ Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueyin
 
 Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
 
+Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, 2019.
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019.
 
