@@ -72,7 +72,7 @@ Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueyin
 
 Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
 
-Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, (`Book`), 2019.
+Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, (<font color=red>book</font>), 2019.
 
 Yongqi Li, **Meng Liu**, Jianhua Yin, Chaoran Cui, Xin-Shun Xu and Liqiang Nie, "_Routing Micro-videos via A Temporal Graph-guided Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019.
 
