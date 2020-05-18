@@ -82,12 +82,14 @@ Hao Jiang, Wenjie Wang, **Meng Liu**, Liqiang Nie, Ling-Yu Duan and Changsheng X
 
 Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**ACM CIKM**), 2019.
 
-Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2019. 
+Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2020. 
+
+Shengjing Tian, Xiuping Liu, Meng Liu, Shuhua Li and Baocai Li, "_Siamese Tracking Network with Informative Enhanced Loss_", IEEE Transactions on Multimedia, (**IEEE TMM**), 2020.
 
 ## Professional Services
-Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019.
+Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019, and ACM Conference on Multimedia 2020.
 
-Journal Reviewer for Information Sciences, Journal of Visual Communication, and Multimedia Systems Journal.
+Journal Reviewer for Information Sciences, Journal of Visual Communication, Multimedia Systems Journal, Pattern Recognation, IEEE Transactions on Image Processing, and Journal of Electronic Imaging.
 
 ## Awards
 ACM SIGIR 18 Student Travel Grant, 2018
