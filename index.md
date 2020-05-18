@@ -84,7 +84,7 @@ Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie,
 
 Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2020. 
 
-Shengjing Tian, Xiuping Liu, Meng Liu, Shuhua Li and Baocai Li, "_Siamese Tracking Network with Informative Enhanced Loss_", IEEE Transactions on Multimedia, (**IEEE TMM**), 2020.
+Shengjing Tian, Xiuping Liu, **Meng Liu**, Shuhua Li and Baocai Li, "_Siamese Tracking Network with Informative Enhanced Loss_", IEEE Transactions on Multimedia, (**IEEE TMM**), 2020.
 
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019, and ACM Conference on Multimedia 2020.
