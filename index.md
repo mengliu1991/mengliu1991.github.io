@@ -70,19 +70,19 @@ Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, **Meng Liu**, Xueyin
 
 **Meng Liu**, Liqiang Nie, Xiang Wang, Qi Tian, Baoquan Chen, "_Online Data Organizer: Micro-video Categorization by Structure-guided Multimodal Dictionary Learning_", IEEE Transactions on Image Processing (**IEEE TIP**), 2019. [code](http://acmmm17.wixsite.com/intimate)
 
-Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. 
+Xiang Wang, Xiangnan He, Yixin Cao, **Meng Liu**, Tat-Seng Chua, "_KGAT: Knowledge Graph Attention Network for Recommendation_",  ACM SIGKDD Conference on Knowledge Discovery and Data Mining, (**ACM KDD**), 2019. [code](https://github.com/xiangwang1223/knowledge_graph_attention_network)
 
 Liqiang Nie, **Meng Liu**, Xuemeng Song, "_Multimodal Learning toward Micro-Video Understanding_", Synthesis Lectures on Image, Video, and Multimedia Processing, (`Book`), 2019.
 
-Yongqi Li, **Meng Liu**, Jianhua Yin, Chaoran Cui, Xin-Shun Xu and Liqiang Nie, "_Routing Micro-videos via A Temporal Graph-guided Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019.
+Yongqi Li, **Meng Liu**, Jianhua Yin, Chaoran Cui, Xin-Shun Xu and Liqiang Nie, "_Routing Micro-videos via A Temporal Graph-guided Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019. [code](https://anonymous1240.wixsite.com/alpine)
 
-Tian Gan, Shaokun Wang, **Meng Liu**, Xumeng Song, Yiyang Yao and Liqiang Nie, "_Seeking Micro-influencers for Brand Promotion_", ACM Conference on Multimedia, (**ACM MM**), 2019. 
+Tian Gan, Shaokun Wang, **Meng Liu**, Xumeng Song, Yiyang Yao and Liqiang Nie, "_Seeking Micro-influencers for Brand Promotion_", ACM Conference on Multimedia, (**ACM MM**), 2019. [code](https://github.com/gantian/ACMMM-2019-influencer)
 
 Hao Jiang, Wenjie Wang, **Meng Liu**, Liqiang Nie, Ling-Yu Duan and Changsheng Xu, "_Market2Dish: A Health-aware Food Recommendation System_", ACM Conference on Multimedia, (**ACM MM**), 2019. 
 
-Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**ACM CIKM**), 2019.
+Mengmeng Li, Tian Gan, **Meng Liu**, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, "_Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network_", ACM International Conference on Information and Knowledge Management, (**ACM CIKM**), 2019. [code](https://anon425.wixsite.com/v2ht)
 
-Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2020. 
+Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation_", ACM International Conference on Web Search and Data Mining, (**ACM WSDM**), 2020. [code](https://anonymous274.wixsite.com/lara)
 
 Shengjing Tian, Xiuping Liu, **Meng Liu**, Shuhua Li and Baocai Li, "_Siamese Tracking Network with Informative Enhanced Loss_", IEEE Transactions on Multimedia, (**IEEE TMM**), 2020.
 
@@ -94,11 +94,10 @@ Da Cao, Yawen Zeng, **Meng Liu**, Xiangnan He, Meng Wang, Zheng Qin, "_STRONG: S
 
 Hongchen Tan, Xiuping Liu, **Meng Liu**, Baocai Yin, Xin Li, "_KT-GAN: Knowledge-Transfer Generative Adversarial Network for Text-to-Image Synthesis_", IEEE Transactions on Image Processing, (**IEEE TIP**), 2020.
 
-
 ## Professional Services
-Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019, and ACM Conference on Multimedia 2020.
+Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, 2018, 2019, and 2020, Pacific-Rim Conference on Multimedia 2018, CVPR 2021, AAAI 2021, COLING 2020.
 
-Journal Reviewer for Information Sciences, Journal of Visual Communication, Multimedia Systems Journal, Pattern Recognation, IEEE Transactions on Image Processing, and Journal of Electronic Imaging.
+Journal Reviewer for Information Sciences, Journal of Visual Communication and Image Representation, Multimedia Systems Journal, Pattern Recognation, IEEE Transactions on Image Processing, and Journal of Electronic Imaging, IEEE Transactions on Knowledge and Data Engineering, and IEEE Transactions on Multimedia.
 
 ## Awards
 ACM SIGIR 18 Student Travel Grant, 2018
@@ -120,12 +119,4 @@ Outstanding Graduates at Dalian University of Technology, 2016
 National Scholarship, 2015
 
 Dalian University of Technology Scholarship, 2013-2016
-
-Outstanding Graduates at Henan University, 2013
-
-Outstanding students at Henan University, 2009-2013
-
-Henan University Scholarship, 2009-2013
-
-
-      
+    
