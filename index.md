@@ -86,6 +86,15 @@ Changfeng Sun, Han Liu, **Meng Liu**, Zhaochun Ren, Tian Gan and Liqiang Nie, "_
 
 Shengjing Tian, Xiuping Liu, **Meng Liu**, Shuhua Li and Baocai Li, "_Siamese Tracking Network with Informative Enhanced Loss_", IEEE Transactions on Multimedia, (**IEEE TMM**), 2020.
 
+Leigang Qu, **Meng Liu**, Da Cao, Liqiang Nie, Qi Tian, "_Context-Aware Multi-View Summarization Network for Image-Text Matching_", Proceedings of the 28th ACM International Conference on Multimedia, (**ACM MM**), 2020. [code](https://acmmmcamera.wixsite.com/camera)
+
+Da Cao, Yawen Zeng, **Meng Liu**, Xiangnan He, Meng Wang, Zheng Qin, "_STRONG: Spatio-Temporal Reinforcement Learning for Cross-Modal Video Moment Localization_", Proceedings of the 28th ACM International Conference on Multimedia, (**ACM MM**), 2020. [code](https://github.com/yawenzeng/STRONG)
+
+**Meng Liu**, Leigang Qu, Liqiang Nie, Maofu Liu, Lingyu Duan, Baoquan Chen, "_Iterative Local-Global Collaboration Learning Towards One-Shot Video Person Re-Identification_", IEEE Transactions on Image Processing, (**IEEE TIP**), 2020. [code](https://github.com/LgQu/VOLTA)
+
+Hongchen Tan, Xiuping Liu, **Meng Liu**, Baocai Yin, Xin Li, "_KT-GAN: Knowledge-Transfer Generative Adversarial Network for Text-to-Image Synthesis_", IEEE Transactions on Image Processing, (**IEEE TIP**), 2020.
+
+
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, Pacific-Rim Conference on Multimedia 2018, ACM Conference on Multimedia 2019, and ACM Conference on Multimedia 2020.
 
