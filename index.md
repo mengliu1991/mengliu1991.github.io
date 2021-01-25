@@ -95,7 +95,7 @@ Da Cao, Yawen Zeng, **Meng Liu**, Xiangnan He, Meng Wang, Zheng Qin, "_STRONG: S
 Hongchen Tan, Xiuping Liu, **Meng Liu**, Baocai Yin, Xin Li, "_KT-GAN: Knowledge-Transfer Generative Adversarial Network for Text-to-Image Synthesis_", IEEE Transactions on Image Processing, (**IEEE TIP**), 2020.
 
 ## Grants
-NSFC, Youth Science Fund Project，NO.62006142，Multi-modal explicit relationship modeling for micro-video analysis, 2021-01至2023-12
+NSFC, Youth Science Fund Project，NO.62006142，Multi-modal explicit relationship modeling for micro-video analysis, 2021-01--2023-12
 
 ## Professional Services
 Conference Reviewer for International Conference on Multimedia Modeling 2018, ACM Conference on Multimedia 2017, 2018, 2019, and 2020, Pacific-Rim Conference on Multimedia 2018, CVPR 2021, AAAI 2021, COLING 2020.
