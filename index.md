@@ -2,7 +2,7 @@
 layout: default
 ---
 ## About Me
-I'm Meng Liu (刘萌), I currently a Professor with the School of Computer Science and Techonology, Shandong Jianzhu University. I received the Ph.D. degree from the Shandong University, Qingdao China, advised by [Prof. Baoquan Chen](https://cfcs.pku.edu.cn/baoquan/) and [Prof. Liqiang Nie](http://ir.sdu.edu.cn/~liqiangnie/index.html). My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in computational mathematics from Dalian University of Technology, China, in 2016. I did internship at National University of Singapore from 2017 to 2018, advised by [Prof. Tat-Seng Chua](https://www.comp.nus.edu.sg/cs/bio/chuats/). 
+I'm Meng Liu (刘萌), I currently a Professor with the School of Computer Science and Techonology, Shandong Jianzhu University. I received the Ph.D. degree from the Shandong University, Qingdao China, advised by [Prof. Baoquan Chen](https://cfcs.pku.edu.cn/baoquan/) and [Prof. Liqiang Nie](https://liqiangnie.github.io/). My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in computational mathematics from Dalian University of Technology, China, in 2016. I did internship at National University of Singapore from 2017 to 2018, advised by [Prof. Tat-Seng Chua](https://www.comp.nus.edu.sg/cs/bio/chuats/). 
 
 ## Education
 <div align="left">
