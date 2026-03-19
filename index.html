@@ -1,806 +1,307 @@
-﻿<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meng Liu | Academic Homepage</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --primary: #1a56b3;
+      --border: #e5e7eb;
+      --maxw: 1040px;
+    }
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(var(--maxw), calc(100% - 32px)); margin: 0 auto; }
 
-<meta name="description" content="Name of your web site">
-<meta name="author" content="Marketify">
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .nav {
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.94rem;
+    }
+    .nav-links a { color: #333; }
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    .hero {
+      padding: 24px 0 10px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .profile-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+    .profile-name {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .profile-title {
+      margin: 0 0 12px;
+      color: #333;
+      font-size: 1rem;
+    }
+    .bio p {
+      margin: 0 0 10px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+    .divider {
+      border-top: 1px solid #e8e8e8;
+      margin: 18px 0 0;
+    }
 
-<title>Home</title>
+    section {
+      padding: 16px 0 0;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.32rem;
+      font-weight: 700;
+    }
+    .news-list, .service-list, .awards-list, .pub-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .pageviews-box {
+      padding: 10px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pageviews-box strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+    .pageviews-box .counter {
+      color: var(--primary);
+      font-weight: 700;
+    }
 
-<!-- STYLES -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-<!-- /STYLES -->
-
+    .news-list, .service-list, .awards-list, .pub-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .news-list li, .service-list li, .awards-list li {
+      margin: 0 0 7px;
+    }
+    .date {
+      font-weight: 700;
+    }
+    .pub-year {
+      margin: 18px 0 8px;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .pub-list {
+      padding-left: 0;
+      list-style: none;
+    }
+    .pub-item {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #ececec;
+    }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-title {
+      font-weight: 400;
+    }
+    .pub-links {
+      display: inline-flex;
+      gap: 8px;
+      margin-left: 8px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 0.84rem;
+      color: var(--primary);
+    }
+    .highlight-red { color: #c62828; font-weight: 700; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    footer {
+      padding: 24px 0 36px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 860px) {
+      .hero-grid, .two-col { grid-template-columns: 1fr; }
+      .profile-photo { max-width: 220px; }
+    }
+    @media (max-width: 640px) {
+      .nav { align-items: flex-start; padding: 10px 0; }
+      .nav, .nav-links { flex-direction: column; }
+      .nav-links { gap: 8px; }
+      .profile-name { font-size: 1.6rem; }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Meng Liu</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+        <a href="#awards">Awards</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- WRAPPER ALL -->
-<div>
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div>
+        <img class="profile-photo" src="img/about/mengliu1.jpg" alt="Meng Liu" />
+      </div>
+      <div class="bio">
+        <h1 class="profile-name">Meng Liu (刘萌)</h1>
+        <div class="profile-title">Professor, School of Computer Science and Technology, Shandong Jianzhu University</div>
+        <p>My name is Meng Liu (刘萌). I am currently a Professor with the School of Computer Science and Technology, Shandong Jianzhu University. I received the Ph.D. degree from Shandong University, Qingdao, China, advised by <a href="https://liqiangnie.github.io/index.html" target="_blank" rel="noopener noreferrer">Prof. Liqiang Nie</a> and <a href="https://baoquanchen.info/" target="_blank" rel="noopener noreferrer">Prof. Baoquan Chen</a>.</p>
+        <p>My research focuses on multimedia computing and information retrieval. I obtained my M.S. degree in Computational Mathematics from Dalian University of Technology, China, in 2016. I also worked as a research intern at the National University of Singapore from 2017 to 2018, advised by <a href="https://www.chuatatseng.com/" target="_blank" rel="noopener noreferrer">Prof. Tat-Seng Chua</a>.</p>
+        <div class="contact-row">
+          <a href="mailto:mengliu.sdu@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=tI_cTV8AAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://dblp.org/" target="_blank" rel="noopener noreferrer">DBLP</a>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="divider"></div></div>
+  </section>
 
+  <main class="container">
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span class="date">[2026/02]</span> One paper was accepted by CVPR 2026.</li>
+        <li><span class="date">[2025/12]</span> One paper was accepted by IEEE TCSVT.</li>
+        <li><span class="date">[2025/11]</span> Five papers were accepted by AAAI 2026.</li>
+        <li><span class="date">[2025/10]</span> One paper was accepted by IEEE TPAMI and IEEE TCSVT.</li>
+        <li><span class="date">[2025/09]</span> One paper was accepted by NeurIPS 2025 <span class="highlight-red">(Spotlight)</span>.</li>
+        <li><span class="date">[2025/07]</span> Won the First Place in four Ego4D challenges at CVPR 2025.</li>
+        <li><span class="date">[2025/02]</span> One paper was accepted by CVPR 2025.</li>
+      </ul>
+    </section>
 
-<div class="top">
-	<div class="topbar">
-		<div class="top-left">
-			
-			<ul class="list">
-				<!-- <li><a href="#home">Home</a></li> -->
-				<li><a href="#about" class="item">About Me</a></li>
-				<li><a href="#Education" class="item">Education</a></li>
-				<li><a href="#Experience" class="item">Experience</a></li>
-				<li><a href="#News" class="item">News</a></li>
-				<li><a href="#Publications" class="item">Publications</a></li>
-				<li><a href="#Grants" class="item">Grants</a></li>
-				<li><a href="#Professional Services" class="item">Professional Services</a></li>
-				<li><a href="#Awards" class="item">Honors & Awards</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="arlo_tm_wrapper_all" style="padding-top: 70px;">
-	
+    <section id="publications">
+      <h2>Publications</h2>
 
-	<div id="arlo_tm_popup_blog">
-		<div class="container">
-			<div class="inner_popup scrollable"></div>
-		</div>
-		<span class="close"><a href="#"></a></span>
-	</div>
-	
-	<!-- PRELOADER 网页加载动画-->
-	<!-- <div class="arlo_tm_preloader">
-		<div class="spinner_wrap">
-			<div class="spinner"></div>
-		</div>
-	</div> -->
-	<!-- /PRELOADER -->
-	
+      <div class="pub-year">2026</div>
+      <ul class="pub-list">
+        <li class="pub-item"><span class="pub-title">Qilang Ye, Wei Zeng, <strong>Meng Liu<sup>*</sup></strong>, Jie Zhang, Yupeng Hu, Zitong Yu, Yu Zhou, “<em>When Eyes and Ears Disagree: Can MLLMs Discern Audio-Visual Confusion?</em>”, <strong>AAAI</strong>, 2026.</span></li>
+        <li class="pub-item"><span class="pub-title">Lian He, <strong>Meng Liu<sup>*</sup></strong>, Qilang Ye, Yu Zhou, Xiang Deng, Gangyi Ding, “<em>Task-Aware 3D Affordance Segmentation via 2D Guidance and Geometric Refinement</em>”, <strong>AAAI</strong>, 2026.</span></li>
+        <li class="pub-item"><span class="pub-title">Qiaohui Chu, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yisen Feng, Haoxiang Shi, Liqiang Nie, “<em>Intention-Guided Cognitive Reasoning for Egocentric Long-Term Action Anticipation</em>”, <strong>AAAI</strong>, 2026.</span></li>
+        <li class="pub-item"><span class="pub-title">Haoyu Zhang, Qiaohui Chu, <strong>Meng Liu<sup>*</sup></strong>, Haoxiang Shi, Yaowei Wang, Liqiang Nie, “<em>Exo2Ego: Exocentric Knowledge Guided MLLM for Egocentric Video Understanding</em>”, <strong>AAAI</strong>, 2026.</span></li>
+        <li class="pub-item"><span class="pub-title">Yunxiao Wang, <strong>Meng Liu<sup>*</sup></strong>, Wenqi Liu, Xuemeng Song, Bin Wen, Fan Yang, Tingting Gao, Di Zhang, Guorui Zhou, Liqiang Nie, “<em>TIME: Temporal-Sensitive Multi-Dimensional Instruction Tuning and Robust Benchmarking for Video-LLMs</em>”, <strong>AAAI</strong>, 2026. <span class="highlight-red">(Oral)</span></span></li>
+        <li class="pub-item"><span class="pub-title">Yichen Zeng, Hebaixu Wang, <strong>Meng Liu<sup>*</sup></strong>, Yu Zhou, Chen Gao, Kehan Chen, Gongping Huang, “<em>Semantic Audio-Visual Navigation in Continuous Environments</em>”, <strong>CVPR</strong>, 2026.</span></li>
+      </ul>
 
-	
-    <!-- CONTENT -->
-	<div class="arlo_tm_content" style="font-size: medium;">
-		
-		<!-- LEFTPART -->
+      <div class="pub-year">2025</div>
+      <ul class="pub-list">
+        <li class="pub-item"><span class="pub-title">Yishan Zou, Chris Nugent, Matthew Burns, Shengli Wu, Lei Zhu, <strong>Meng Liu<sup>*</sup></strong>, “<em>Adaptive Attention-based Unsupervised Domain Adaptation for Egocentric Action Recognition</em>”, <strong>IEEE TCSVT</strong>, 2025.</span></li>
+        <li class="pub-item"><span class="pub-title">Kejie Wang, Xuemeng Song, <strong>Meng Liu</strong>, Jin Yuan, Weili Guan, “<em>ViMAEdit: Vision-guided and Mask-enhanced Adaptive Editing Algorithm for Prompt-based Image Editing</em>”, <strong>IEEE TCSVT</strong>, 2025.</span></li>
+        <li class="pub-item"><span class="pub-title">Jianlong Wu, Wei Liu, Ye Liu, <strong>Meng Liu<sup>*</sup></strong>, Liqiang Nie, Zhouchen Lin, Chang Wen Chen, “<em>A Survey on Video Temporal Grounding with Multimodal Large Language Model</em>”, <strong>IEEE TPAMI</strong>, 2025.</span></li>
+        <li class="pub-item"><span class="pub-title">Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Zaijing Li, Haokun Wen, Weili Guan, Yaowei Wang, Liqiang Nie, “<em>Spatial Understanding from Videos: Structured Prompts Meet Simulation Data</em>”, <strong>NeurIPS</strong>, 2025. <span class="highlight-red">(Spotlight)</span></span></li>
+        <li class="pub-item"><span class="pub-title"><strong>Meng Liu</strong>, Yupeng Hu, Weili Guan, Liqiang Nie, “<em>Intelligent and Efficient Video Moment Localization</em>”, <strong>Springer Nature</strong>, 2025.</span></li>
+        <li class="pub-item"><span class="pub-title">Bohan Hou, Haoqiang Lin, Xuemeng Song, Haokun Wen, <strong>Meng Liu</strong>, Yupeng Hu, Xiangyu Zhao, “<em>FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval</em>”, <strong>SIGIR</strong>, 2025.</span></li>
+        <li class="pub-item"><span class="pub-title">Yisen Feng, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Weili Guan, Liqiang Nie, “<em>Object-Shot Enhanced Grounding Network for Egocentric Video</em>”, <strong>CVPR</strong>, 2025.</span></li>
+      </ul>
 
-		<!-- /LEFTPART -->
-		
-		<!-- RIGHTPART -->
-		<div class="arlo_tm_rightpart">
-			<div class="rightpart_inner">
-				<!-- <div class="arlo_tm_section" id="home">
-					<div class="arlo_tm_hero_header_wrap">
-						<div class="arlo_tm_universal_box_wrap">
-							<div class="bg_wrap">
-								<div class="overlay_image hero jarallax" data-speed="0.1"></div>
-								<div class="overlay_color hero"></div>
-							</div>
-							<div class="content hero">
-								<div class="inner_content">
-									<div class="image_wrap">
-										<img src="img/hero/inari.png" alt="" />
-									</div>
-									<div class="name_holder">
-										<h3>Xufeng <span>Wang</span></h3>
-									</div>
-									<div class="text_typing">
-										<p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
-									</div>
-								</div>
-							</div>
-							<div class="arlo_tm_arrow_wrap bounce anchor">
-								<a href="#about"><i class="xcon-angle-double-down"></i></a>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				
-				<!-- ABOUT -->
-				<div class="arlo_tm_section relative" id="about">
-					<div class="arlo_tm_about_wrapper_all">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>About Me</h3>
-								<span>Main informations about me</span>							
-								<div class="arlo_tm_about_wrap inner-content">
-									<div class="author_wrap">
-										<div class="leftbox">
-											<div class="about_image_wrap parallax" data-relative-input="true">
-												<div class="image layer" data-depth="0.1">
-													<img src="img/about/550x640.jpg" alt="" />
-													<div class="inner" data-img-url="img/about/mengliu1.jpg"></div>
-												</div>
-												<div class="border layer" data-depth="0.2">
-													<img src="img/about/550x640.jpg" alt="" />
-													<div class="inner"></div>
-												</div>
-												<br />
-												<br />
-											
-												
-					 
-											</div>
-										</div>
-										<div class="rightbox">
-											<!-- <div class="arlo_tm_mini_title_holder">
-												<h4>I'm Wang Xufeng and <span class="arlo_tm_animation_text_word"></span></h4>
-											</div> -->
-											<div class="definition">
-												<p style="font-size: large;">My name is Meng Liu (刘萌). I am currently a Professor with the School of Computer Science and Technology, Shandong Jianzhu University. I received the Ph.D. degree from Shandong University, Qingdao China, advised by <a href="https://liqiangnie.github.io/index.html" target="_blank" style="color:blue;">Prof. Liqiang Nie</a> and <a href="https://baoquanchen.info/" target="_blank" style="color:blue;">Prof. Baoquan Chen</a>. My research focused on multimedia computing and information retrieval. I obtained my M.S. degree in Computational Mathematics from Dalian University of Technology, China, in 2016. I did an internship at the National University of Singapore from 2017 to 2018, advised by <a href="https://www.chuatatseng.com/" target="_blank" style="color:blue;">Prof. Tat-Seng Chua</a>.</p>
-												
-											</div>
-											
-					 <p> <a href="mailto: mengliu.sdu@gmail.com" style="color:blue;"><i class="fa fa-envelope"></i> &nbsp; mengliu.sdu@gmail.com</a>
-						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://scholar.google.com/citations?user=tI_cTV8AAAAJ&hl=zh-CN" target="_blank" style="color:blue;"><i class="fa fa-globe"></i> &nbsp; Google Scholar</a>
-											
-											<div class="buttons_wrap">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /ABOUT -->
-				<!-- Education -->
-				<div class="arlo_tm_section" id="Education">
-					<div class="arlo_tm_Education_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>Education</h3>
-								<span>My Education</span>	
-								<div class="inner-content">
-									<div algin="left">
-										<strong> Shandong University, Qingdao, China (Sep 2016 - Dec 2019) </strong>
-										  <a href="http://www.sdu.edu.cn/" target="_blank" rel="external">
-											<img border="0" src="img/logo/sdu_logo.jpg" align="right" width="80" height="80">
-										  </a> 
-									  <ul>
-										<li>Doctor of Philosophy (Ph.D), Computer Science and Technology</li>
-										<li>Advisor: Prof. Baoquan Chen and Prof. Liqiang Nie</li>
-									  </ul>   
-									  </div>
-									  <div align="left" style="margin-top: 10px;">
-										<strong> Dalian University of Technology, Dalian, China (Sep 2013 - Jun 2016) </strong>
-										  <a href="https://www.dlut.edu.cn/" target="_blank" rel="external">
-								 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img border="0" src="img/logo/dlut_logo.jpg" align="right" width="70" height="70">
-										  </a> 
-										<ul>
-										<li>
-										  Master of Science (M.S), Computational Mathematics</li>
-										<li>
-										  Advisor: Prof. Xiuping Liu</li>
-									  </ul>      
-									  </div>
-									  <div align="left" style="margin-top: 10px;">
-										<strong> Henan University, Kaifeng, China (Sep 2009 - Jun 2013) </strong>
-										  <a href="http://www.henu.edu.cn/" target="_blank" rel="external">
-								 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img border="0" src="img/logo/henan_logo.jpg" align="right" width="70" height="70">
-										  </a> 
-										<ul>
-										<li>
-										  Bachelor of Science (B.S), Mathematics and Applied Mathematics</li>
-										<li>
-										  Graduated with Excellent Thesis Award</li>
-									  </ul>      
-									  </div>
-								</div>						
-							</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				<!-- /Education -->
-				<!-- Experience -->
-				<div class="arlo_tm_section" id="Experience">
-					<div class="arlo_tm_Experience_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>Experience</h3>
-								<span>My Experience</span>
-								<div align="left" class="inner-content">
-									<strong> National University of Singapore, NUS, Singapore  (Oct 2017 - Oct 2018) </strong>
-									  <a target="_blank" rel="external">
-							 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img border="0" src="img/logo/next-logo.png" align="right" width="70">
-									  </a> 
-									<ul>
-									<li>
-									  Position: Research Intern, in NEXT++, School of Computing </li>
-											<img border="0" src="img/logo/nus_logo.png" align="right" width="70">
-									<li>Cross-modal Moment Retrieval in videos via Language. </li>
-								  </ul>      
-								  </div>
-								</div>
-						</div>
-					</div>
-				</div>
-				<!-- /Experience -->
+      <div class="pub-year">2024</div>
+      <ul class="pub-list">
+        <li class="pub-item"><span class="pub-title">Yuanyuan Wang, <strong>Meng Liu<sup>*</sup></strong>, Xuemeng Song, Liqiang Nie, “<em>TR-Adapter: Parameter-Efficient Transfer Learning for Video Question Answering</em>”, <strong>IEEE TMM</strong>, 2024.</span></li>
+        <li class="pub-item"><span class="pub-title">Zhicheng Sheng, Fan Liu, <strong>Meng Liu</strong>, Feng Zheng, Liqiang Nie, “<em>Open-set Synthesis for Free-viewpoint Human Body Reenactment of Novel Poses</em>”, <strong>IEEE TCSVT</strong>, 2024.</span></li>
+        <li class="pub-item"><span class="pub-title"><strong>Meng Liu<sup>*</sup></strong>, Da Li, Yongqiang Li, Xuemeng Song, Liqiang Nie, “<em>Audio-Semantic Enhanced Pose-Driven Talking Head Generation</em>”, <strong>IEEE TCSVT</strong>, 2024.</span></li>
+        <li class="pub-item"><span class="pub-title">Yuanyuan Wang, <strong>Meng Liu<sup>*</sup></strong>, Xuemeng Song, Liqiang Nie, “<em>Harnessing Representative Spatial-Temporal Information for Video Question Answering</em>”, <strong>ACM ToMM</strong>, 2024.</span></li>
+        <li class="pub-item"><span class="pub-title">Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Zixin Liu, Xuemeng Song, Yaowei Wang, Liqiang Nie, “<em>Multi-Factor Adaptive Vision Selection for Egocentric Video Question Answering</em>”, <strong>ICML</strong>, 2024.</span></li>
+        <li class="pub-item"><span class="pub-title">Haitao Shi, <strong>Meng Liu<sup>*</sup></strong>, Xiaoxuan Mu, Xuemeng Song, Yupeng Hu, and Liqiang Nie, “<em>Breaking Through the Noisy Correspondence: A Robust Model for Image-Text Matching</em>”, <strong>ACM TOIS</strong>, 2024.</span></li>
+      </ul>
+    </section>
 
-				<!-- Experience -->
-				<div class="arlo_tm_section" id="News">
-					<div class="arlo_tm_Experience_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>News</h3>
-								<span>My latest news</span>
-								<div align="left" class="inner-content">
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2026/02] One paper was accepted by CVPR 2026.</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/12] One paper was accepted by IEEE TCSVT.</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/11] Five papers were accepted by AAAI 2026.</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/10] One paper was accepted by IEEE TPAMI and IEEE TCSVT.</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/09] One paper was accepted by NeurIPS 2025 (Spotlight).</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/07] Win the First Place of Four Ego-4D Challenges in CVPR 2025.</p>
-									<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2025/02] One paper was accepted by CVPR 2025.</p>
-									<!-- <p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/12] One paper was accepted by IEEE TMM.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/06] Win the First Place of Ego Schema challenge and Second Place of Ego-NLQ challenge in CVPR 2024.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/06] One paper was accepted by IEEE TCSVT.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/06] One paper was accepted by ACM ToMM.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/05] One paper was accepted by ICML.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/04] One paper was accepted by ACM TOIS.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/04] One paper was accepted by ACM SIGIR.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2024/03] Two papers were accepted by ACM ToMM.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2023/11] Guided students to participate in the Shengteng AI Innovation Competition 2023 Jinan Regional Finals, winning the Silver Award in the Developer Kit Innovation Track.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2023/11] Guided student to win the Third Prize at the 2023 Xinchuang and Digital Economy Postdoctoral Haihe Academic Event.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2023/10] One paper was accepted by IEEE TIP.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2023/09] One paper was accepted by IEEE TPAMI.</p>-->
-									<!--<p><img src="./img/news/flag.png" alt="" style="width: 20px;height: 20px;">&nbsp;[2023/08] Four papers were accepted by ACM MM 2023.</p>-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /Experience -->
-				
-				
-				
-				
-				<!-- Publications -->
+    <section id="service">
+      <h2>Professional Services</h2>
+      <ul class="service-list">
+        <li>Conference Reviewer for MMM, ACM MM, PCM, CVPR, AAAI, COLING, ICCV, and WSDM.</li>
+        <li>Journal Reviewer for Information Sciences, Journal of Visual Communication and Image Representation, Multimedia Systems, Pattern Recognition, IEEE TIP, IEEE TKDE, and IEEE TMM.</li>
+      </ul>
+    </section>
 
-				<div class="arlo_tm_section relative" id="Publications">
-					<div class="arlo_tm_Publications_wrapper_all">
+    
 
-						<!-- Publications FILTER -->
-						<div class="arlo_tm_second_Publications">
-						<div class="container">
-							<div class="arlo_tm_Publications_wrap">
-								<div class="arlo_tm_title_holder Publications">
-									<h3>Publications</h3>
-									<span>My latest works</span>
-									<div class="inner-content">
-										<h4 class="year-title">In the Year of 2026:</h4>
-										<hr/>
-										<div class="year-pub">
-										<p>Qilang Ye, Wei Zeng, <strong>Meng Liu<sup>*</sup></strong>, Jie Zhang, Yupeng Hu, Zitong Yu, Yu Zhou, “<em>When Eyes and Ears Disagree: Can MLLMs Discern Audio-Visual Confusion?</em>”, <strong>AAAI</strong>, 2026.</p>
-										<p>Lian He, <strong>Meng Liu<sup>*</sup></strong>, Qilang Ye, Yu Zhou, Xiang Deng, Gangyi Ding, “<em>Task-Aware 3D Affordance Segmentation via 2D Guidance and Geometric Refinement</em>”, <strong>AAAI</strong>, 2026.</p>
-										<p>Qiaohui Chu, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yisen Feng, Haoxiang Shi, Liqiang Nie, “<em>Intention-Guided Cognitive Reasoning for Egocentric Long-Term Action Anticipation</em>”, <strong>AAAI</strong>, 2026.</p>
-										<p>Haoyu Zhang, Qiaohui Chu, <strong>Meng Liu<sup>*</sup></strong>, Haoxiang Shi, Yaowei Wang, Liqiang Nie, “<em>Exo2Ego: Exocentric Knowledge Guided MLLM for Egocentric Video Understanding</em>”, <strong>AAAI</strong>, 2026.</p>
-										<p>Yunxiao Wang, <strong>Meng Liu<sup>*</sup></strong>, Wenqi Liu, Xuemeng Song, Bin Wen, Fan Yang, Tingting Gao, Di Zhang, Guorui Zhou, Liqiang Nie, “<em>TIME: Temporal-Sensitive Multi-Dimensional Instruction Tuning and Robust Benchmarking for Video-LLMs</em>”, <strong>AAAI</strong>, 2026. <font color="red">(oral)</font> </p>
-										<p>Yichen Zeng, Hebaixu Wang, <strong>Meng Liu<sup>*</sup></strong>, Yu Zhou, Chen Gao, Kehan Chen, Gongping Huang, “<em>Semantic Audio-Visual Navigation in Continuous Environments</em>”, <strong>CVPR</strong>, 2026.</p>
-										
-										
-										</div>
-										<h4 class="year-title">In the Year of 2025:</h4>
-										<hr/>
-										<div class="year-pub">
-											<p>Yishan Zou, Chris Nugent, Matthew Burns, Shengli Wu, Lei Zhu, <strong>Meng Liu<sup>*</sup></strong>, “<em>Adaptive Attention-based Unsupervised Domain Adaptation for Egocentric Action Recognition</em>”, <strong>IEEE TCSVT</strong>, 2025.</p>
-											<p>Kejie Wang, Xuemeng Song, <strong>Meng Liu</strong>, Jin Yuan, Weili Guan, “<em>ViMAEdit: Vision-guided and Mask-enhanced Adaptive Editing Algorithm for Prompt-based Image Editing</em>”, <strong>IEEE TCSVT</strong>, 2025.</p>
-											<p>Jianlong Wu, Wei Liu, Ye Liu, <strong>Meng Liu<sup>*</sup></strong>, Liqiang Nie, Zhouchen Lin, Chang Wen Chen, “<em>A Survey on Video Temporal Grounding with Multimodal Large Language Model</em>”, <strong>IEEE TPAMI</strong>, 2025.</p>
-											<p>Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Zaijing Li, Haokun Wen, Weili Guan, Yaowei Wang, Liqiang Nie, “<em>Spatial Understanding from Videos: Structured Prompts Meet Simulation Data</em>”, <strong>NeurIPS</strong>, 2025. <font color="red">(spotlight)</font> </p>
-											<p><strong>Meng Liu</strong>, Yupeng Hu, Weili Guan, Liqiang Nie, “<em>Intelligent and Efficient Video Moment Localization</em>”, <strong>Springer Nature</strong>, 2025.</p>
-											<p>Bohan Hou, Haoqiang Lin, Xuemeng Song, Haokun Wen, <strong>Meng Liu</strong>, Yupeng Hu, Xiangyu Zhao, “<em>FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval</em>”, <strong>SIGIR</strong>, 2025.</p>
-											<p>Yisen Feng, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Weili Guan, Liqiang Nie, “<em>Object-Shot Enhanced Grounding Network for Egocentric Video</em>”, <strong>CVPR</strong>, 2025.</p>
-										</div>
-										<h4 class="year-title">In the Year of 2024:</h4>
-										<hr/>
-										<div class="year-pub">
-											<p>Yuanyuan Wang, <strong>Meng Liu<sup>*</sup></strong>, Xuemeng Song, Liqiang Nie, “<em>TR-Adapter: Parameter-Efficient Transfer Learning for Video Question Answering</em>”, <strong>IEEE TMM</strong>, 2024.</p>
-											<p>Zhicheng Sheng, Fan Liu, <strong>Meng Liu</strong>, Feng Zheng, Liqiang Nie, “<em>Open-set Synthesis for Free-viewpoint Human Body Reenactment of Novel Poses</em>”, <strong>IEEE TCSVT</strong>, 2024.</p>
-											<p><strong>Meng Liu<sup>*</sup></strong>, Da Li, Yongqiang Li, Xuemeng Song, Liqiang Nie, “<em>Audio-Semantic Enhanced Pose-Driven Talking Head Generation</em>”, <strong>IEEE TCSVT</strong>, 2024.</p>
-											<p>Yuanyuan Wang, <strong>Meng Liu<sup>*</sup></strong>, Xuemeng Song, Liqiang Nie, “<em>Harnessing Representative Spatial-Temporal Information for Video Question Answering</em>”, <strong>ACM ToMM</strong>, 2024.</p>
-											<p>Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Zixin Liu, Xuemeng Song, Yaowei Wang, Liqiang Nie, “<em>Multi-Factor Adaptive Vision Selection for Egocentric Video Question Answering</em>”, <strong>ICML</strong>, 2024.</p>
-											<p>Haitao Shi, <strong>Meng Liu<sup>*</sup></strong>, Xiaoxuan Mu, Xuemeng Song, Yupeng Hu, and Liqiang Nie, “<em>Breaking Through the Noisy Correspondence: A Robust Model for Image-Text Matching</em>”, <strong>ACM TOIS</strong>, 2024.</p>
-											<p>Haoqiang Lin, Haokun Wen, Xuemeng Song, Meng Liu, Yupeng Hu, and Liqiang Nie, “<em>Fine-grained Textual Inversion network for Zero-Shot Composed Image Retrieval</em>”, <strong>ACM SIGIR</strong>, 2024.</p>
-											<p>Hao Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yuan Qi, Yang Ning, Shunbo Hu, Liqiang Nie, and Wenyin Zhang, “<em>Efficient Brain Tumor Segmentation with Lightweight Separable Spatial Convolutional Network</em>”, <strong>ACM TOMM</strong>, 2024.</p>
-											<p>Panpan Zhang, <strong>Meng Liu<sup>*</sup></strong>, Xuemeng Song, Da Cao, Zan Gao, Liqiang Nie, “<em>Universal Relocalizer for Weakly Supervised Referring Expression Grounding</em>”, <strong>ACM TOMM</strong>, 2024.</p>
-										</div>
-										<h4 class="year-title">In the Year of 2023:</h4>
-										<hr/>
-										<div class="year-pub">
-											<p>Zhicheng Sheng, Liqiang Nie,<strong>Meng Liu</strong>, Yinwei Wei, Zan Gao, “<em>Towards Fine-Grained Talking Face Generation</em>”, <strong>IEEE  TIP</strong>, 2023.</p>
-											
-											<p>Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yuhong Li, Ming Yan, Zan Gao, Xiaojun Chang, Liqiang Nie, “<em>Attribute-Guided Collaborative Learning for Partial Person Re-Identification</em>”, <strong>IEEE  TPAMI</strong>, 2023.</p>
+    <section id="awards">
+      <h2>Honors & Awards</h2>
+      <ul class="awards-list">
+        <li>CVPR Ego-Schema Challenge First Place, 2024</li>
+        <li>CVPR Ego-NLQ Challenge Second Place, 2024</li>
+        <li>ACM MM Conversational Head Generation Challenge Track 1 First Place, 2023</li>
+        <li>Outstanding Reviewer Award for IEEE TMM, 2021</li>
+        <li>ACM SIGIR Best Student Paper Award, 2021</li>
+        <li>ACM China Council SIGMM Chapter Doctoral Dissertation Award, 2020</li>
+        <li>Shandong Association of Artificial Intelligence Excellent Doctoral Dissertation Award, 2020</li>
+        <li>National Scholarship, 2015</li>
+      </ul>
+    </section>
+  </main>
 
-											<p><strong>Meng Liu</strong>, Fenglei Zhang, Xin Luo, Fan Liu, Yinwei Wei, Liqiang Nie, “<em>Advancing Video Question Answering with a Multi-modal and Multi-layer Question Enhancement Network</em>”, <strong>ACM MM</strong>, 2023.</p>
+  <section id="pageviews" style="padding-top: 4px; text-align: left; transform: scale(0.5); transform-origin: left top; width: 50%;">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=dXjn-wph0tO3qsPQSdoY5ydzjOQvAmsUwyFAgLiUe04&cl=ffffff&w=a"></script>
+    </section>
+  </main>
 
-											<p><strong>Meng Liu</strong>, Yongqiang Li, Shuyan Zhai, Weili Guan, Liqiang Nie, “<em>Towards Realistic Conversational Head Generation: A Comprehensive Framework for Lifelike Video Synthesis</em>”, <strong>ACM MM</strong>, 2023.</p>
-
-											<p>Yunxiao Wang, <strong>Meng Liu<sup>*</sup></strong>, Zhe Li, Yupeng Hu, Xin Luo, Liqiang Nie, “<em>Unlocking the Power of Multimodal Learning for Emotion Recognition in Conversation</em>”, <strong>ACM MM</strong>, 2023.</p>
-											
-											<p>Zaijing Li, Ting-En Lin, Yuchuan Wu, <strong>Meng Liu</strong>, Fengxiao Tang, Ming Zhao, Yongbin Li, “<em>UniSA: Unified Generative Framework for Sentiment Analysis</em>”, <strong>ACM MM</strong>, 2023.</p>
-
-											<p><strong>Meng Liu</strong>, Di Zhou, Jie Guo, Xin Luo, Zan Gao, Liqiang Nie, “<em>Semantic-aware Contrastive Learning with Proposal Suppression for Video Semantic Role Grounding</em>”, <strong>IEEE TCSVT</strong>, 2023.</p>
-
-											<p>Zan Gao, Peng Chen, Tao Zhuo, <strong>Meng Liu</strong>, Lei Zhu, Meng Wang, Shengyong Chen, “<em>A Semantic Perception and CNN-Transformer Hybrid Network for Occluded Person Re-identification</em>”, <strong>IEEE TCSVT</strong>, 2023.</p>
-
-											<p>Dengtian Lin, Liqiang Jing, Xuemeng Song, <strong>Meng Liu</strong>, Teng Sun, Liqiang Nie, <em>“Adapting Generative Pretrained Language Model for Open-domain Multimodal Sentence Summarization</em>”, <strong>ACM SIGIR</strong>, 2023.</p>
-
-											<p>Yan Wang, Xin Luo, Zhen-Duo Chen, Peng-Fei Zhang, <strong>Meng Liu</strong>, Xin-Shun Xu, “<em>FedVMR: A New Federated Learning Method for Video Moment Retrieval</em>”, <strong>ICASSP 2023</strong>, 2023.</p>
-
-											<p>Yuanyuan Wang, <strong>Meng Liu<sup>*</sup></strong>, Jianlong Wu, Liqiang Nie, “<em>Multi-Granularity Interaction and Integration Network for Video Question Answering</em>”, <strong>IEEE TCSVT</strong>, 2023.</p>
-
-											<p>Shuyan Zhai, <strong>Meng Liu<sup>*</sup></strong>, Yongqiang Li, Zan Gao, Lei Zhu, Liqiang Nie, “<em>Talking Face Generation With Audio-Deduced Emotional Landmarks</em>”, <strong>IEEE TNNLS</strong>, 2023.</p>
-
-											<p>Leigang Qu, <strong>Meng Liu</strong>, Wenjie Wang, Zhedong Zheng, Liqiang Nie, Tat-Seng Chua, “<em>Learnable Pillar-based Re-ranking for Image-Text Retrieval</em>”, <strong>ACM SIGIR</strong>, 2023.</p>
-
-											<p>Hui Liu, Shanshan Li, Jicheng Zhu, Kai Deng, <strong>Meng Liu</strong>, Liqiang Nie, “<em>DDIFN: A Dual-discriminator Multi-modal Medical Image Fusion Network</em>”, <strong>ACM TOMM</strong>, 2023.</p>
-
-											<p>Yupeng Hu, Kun Wang, <strong>Meng Liu</strong>, Haoyu Tang, Liqiang Nie, “<em>Semantic Collaborative Learning for Cross-Modal Moment Localization</em>”, <strong>ACM TOIS</strong>, 2023.</p>
-										</div>
-										<h4 class="year-title">In the Year of 2022:</h4>
-										<hr />
-										<div class="year-pub">
-											<p>Fenglei Zhang, Da Li, Shenghua Li, Weili Guan, <strong>Meng Liu<sup>*</sup></strong>, “<em>A Lightweight Tire Tread Image Classification Network</em>”, <strong>IEEE VCIP</strong>, 2022.</p>
-											<p>Chuanfa Tian, <strong>Meng Liu<sup>*</sup></strong>, Di Zhou, “<em>Preference-Aware Modality Representation and Fusion for Micro-video Recommendation</em>”, <strong>PRCV</strong>, 2022.</p>
-
-											<p>Xianjing Han, Xuemeng Song, Xingning Dong, Yinwei Wei, <strong>Meng Liu</strong>, Liqiang Nie, “<em>Dbiased-p: Dual-biased Predicate Predictor for Unbiased Scene Graph Generation</em>”, <strong>IEEE TMM</strong>, 2022.</p>
-
-											<p><strong>Meng Liu</strong>, Shuyan Zhai, Yongqiang Li, Weili Guan, Liqiang Nie, “<em>A Baseline for ViCo Conversational Head Generation Challenge</em>”, <strong>ACM MM</strong>, 2022.</p>
-
-											<p><strong>Meng Liu</strong>, Liqiang Nie, Yunxiao Wang, Meng Wang, Yong Rui, “<em>A Survey on Video Moment Localization</em>”, ACM Computing Surveys, <strong>ACM CSUR</strong>, 2022.</p>
-
-											<p>Yunxiao Wang, <strong>Meng Liu<sup>*</sup></strong>, Yinwei Wei, Zhiyong Cheng, Yinglong Wang, Liqiang Nie, “<em>Siamese Alignment Network for Weakly Supervised Video Moment Retrieval</em>”, <strong>IEEE TMM</strong>, 2022. <a href="https://sancode.wixsite.com/san-model" target="_blank"><input type=button value="Code"></a></p>
-
-											<p>Weili Guan, Xuemeng Song, Haoyu Zhang, <strong>Meng Liu</strong>, Chung-Hsing Yeh, Xiaojun Chang,”<em>Bi-directional Heterogeneous Graph Hashing towards Efficient Outfit Recommendation</em>”, <strong>ACM MM</strong>, 2022.</p>
-
-											<p>Zan Gao, Hongwei Wei, Weili Guan, Weizhi Nie, <strong>Meng Liu</strong>, Meng Wang,”<em>Multigranular Visual-Semantic Embedding for Cloth-Changing Person Re-identification</em>”, <strong>ACM MM</strong>, 2022.</p>
-										</div>
-										<h4 class="year-title">In the Year of 2021:</h4>
-										<hr />
-										<div  class="year-pub">
-											<p>Shengjing Tian, Bin Liu, Hongchen Tan, Jun Liu, <strong>Meng Liu</strong>, Xiuping Liu, “<em>Deep Supervised Descent Method With Multiple Seeds Generation for 3-D Tracking in Point Cloud</em>”, <strong>IEEE TII</strong>, 2021.</p>
-
-											<p>Shengjing Tian, Xiuping Liu, <strong>Meng Liu</strong>, Yuhao Bian, Junbin Gao, Baocai Yin, “<em>Learning the Incremental Warp for 3D Vehicle Tracking in LiDAR Point Clouds</em>”, Remote Sensing, 2021.</p>
-
-											<p>Zan Gao, Yuxiang Shao, Weili Guan, <strong>Meng Liu</strong>, Zhiyong Cheng, Shengyong Chen, “<em>A Novel Patch Convolutional Neural Network for View-based 3D Model Retrieval</em>”, <strong>ACM MM</strong>, 2021.</p>
-
-											<p>Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Zan Gao, Xiaoqiang Lei, Yinglong Wang, Liqiang Nie, “<em>Multimodal dialog system: Relational Graph-based Context-aware Question Understanding</em>”, <strong>ACM MM</strong>, 2021.</p>
-
-											<p>Yudong Han, Yangyang Guo, Jianhua Yin, <strong>Meng Liu<sup>*</sup></strong>, Yupeng Hu, Liqiang Nie, “<em>Focal and Composed Vision-semantic Modeling for Visual Question Answering</em>”, <strong>ACM MM</strong>, 2021.</p>
-
-											<p>Xiao Zhang, <strong>Meng Liu<sup>*</sup></strong>, Jianhua Yin, Zhaochun Ren, Liqiang Nie,”<em>Question Tagging via Graph-guided Ranking</em>”, <strong>ACM TOIS</strong>, 2021. <a href="https://anonymousrank.wixsite.com/here"><input type=button value="Code"></a></p>
-
-											<p>Leigang Qu, <strong>Meng Liu<sup>*</sup></strong>, Jianlong Wu, Zan Gao, Liqiang Nie, “<em>Dynamic Modality Interaction Modeling for Image-Text Retrieval</em>”, <strong>ACM SIGIR</strong>, 2021. <font color="red">(Best Student Paper)</font> <a href="https://sigir21.wixsite.com/dime"><input type=button value="Code"></a></p>
-
-											<p>Yupeng Hu, Liqiang Nie, <strong>Meng Liu<sup>*</sup></strong>, Kun Wang, Yinglong Wanga, Xiansheng Hua, “<em>Coarse-to-Fine Semantic Alignment for Cross-modal Moment Localization</em>”, <strong>IEEE TIP</strong>, 2021. <a href="https://github.com/Huyp777/CSUN"><input type=button value="Code"></a></p>
-
-											<p>Yupeng Hu, <strong>Meng Liu<sup>*</sup></strong>, Xiaobin Su, Zan Gao, Liqiang Nie, “<em>Video Moment Localization via Deep Cross-Modal Hashing</em>”, <strong>IEEE TIP</strong>, 2021. <a href="https://github.com/Huyp777/CMHN"><input type=button value="Code"></a></p>
-
-											<p>Yawen Zeng, Da Cao, Xiaochi Wei, <strong>Meng Liu</strong>, Zhou Zhao, Zheng Qin, “<em>Multi-Modal Relational Graph for Cross-Modal Video Moment Retrieval</em>”, <strong>IEEE CVPR</strong>, 2021. <a href="https://cvpr-2021.wixsite.com/mmrg"><input type=button value="Code"></a></p>
-
-											<p>Yuchao Liu, <strong>Meng Liu</strong>, Jianhua Yin, “<em>Toward community answer selection by jointly static and dynamic user expertise modeling</em>”, APSIPA Transactions on Signal and Information Processing, 2021.</p>
-										</div>
-										<h4 class="year-title">Before 2021:</h4>
-										<hr />
-										<div class="year-pub" style="margin-bottom: 0;">
-											<p>Leigang Qu, <strong>Meng Liu<sup>*</sup></strong>, Da Cao, Liqiang Nie, Qi Tian, “<em>Context-Aware Multi-View Summarization Network for Image-Text Matching</em>”, <strong>ACM MM</strong>, 2020. <a href="https://acmmmcamera.wixsite.com/camera"><input type=button value="Code"></a></p>
-
-											<p>Da Cao, Yawen Zeng, <strong>Meng Liu</strong>, Xiangnan He, Meng Wang, Zheng Qin, “<em>STRONG: Spatio-Temporal Reinforcement Learning for Cross-Modal Video Moment Localization</em>”, <strong>ACM MM</strong>, 2020. <a href="https://github.com/yawenzeng/STRONG"><input type=button value="Code"></a></p>
-
-											<p><strong>Meng Liu</strong>, Leigang Qu, Liqiang Nie, Maofu Liu, Lingyu Duan, Baoquan Chen, “<em>Iterative Local-Global Collaboration Learning Towards One-Shot Video Person Re-Identification</em>”, <strong>IEEE TIP</strong>, 2020. <a href="https://github.com/LgQu/VOLTA"><input type=button value="Code"></a></p>
-
-											<p>Hongchen Tan, Xiuping Liu, <strong>Meng Liu</strong>, Baocai Yin, Xin Li, “<em>KT-GAN: Knowledge-Transfer Generative Adversarial Network for Text-to-Image Synthesis</em>”, <strong>IEEE TIP</strong>, 2020.</p>
-
-											<p>Haoyu Tang, Jihua Zhu, <strong>Meng Liu</strong>, Zan Gao, Zhiyong Cheng, “<em>Frame-wise Cross-modal Match for Video Moment Retrieval</em>”, <strong>IEEE TMM</strong>, 2020.</p>
-
-											<p>Shengjing Tian, Xiuping Liu, <strong>Meng Liu</strong>, Shuhua Li and Baocai Li, “<em>Siamese Tracking Network with Informative Enhanced Loss</em>”, <strong>IEEE TMM</strong>, 2020.</p>
-
-											<p>Changfeng Sun, Han Liu, <strong>Meng Liu<sup>*</sup></strong>, Zhaochun Ren, Tian Gan and Liqiang Nie, “<em>LARA: Attribute-to-feature Adversarial Learning for Item Cold-start Recommendation</em>”, <strong>ACM WSDM</strong>, 2020. <a href="https://anonymous274.wixsite.com/lara"><input type=button value="Code"></a></p>
-
-											<p>Mengmeng Li, Tian Gan, <strong>Meng Liu</strong>, Zhiyong Cheng, Jianhua Yin and Liqiang Nie, “<em>Long-tail Hashtag Recommendation for Micro-videos with Graph Convolutional Network</em>”, <strong>ACM CIKM</strong>, 2019. <a href="https://anon425.wixsite.com/v2ht"><input type=button value="Code"></a></p>
-
-											<p>Hao Jiang, Wenjie Wang, <strong>Meng Liu</strong>, Liqiang Nie, Ling-Yu Duan and Changsheng Xu, “<em>Market2Dish: A Health-aware Food Recommendation System</em>”, <strong>ACM MM</strong>, 2019.</p>
-
-											<p>Tian Gan, Shaokun Wang, <strong>Meng Liu</strong>, Xumeng Song, Yiyang Yao and Liqiang Nie, “<em>Seeking Micro-influencers for Brand Promotion</em>”, <strong>ACM MM</strong>, 2019. <a href="https://github.com/gantian/ACMMM-2019-influencer"><input type=button value="Code"></a></p>
-
-											<p>Yongqi Li, <strong>Meng Liu</strong>, Jianhua Yin, Chaoran Cui, Xin-Shun Xu and Liqiang Nie, “<em>Routing Micro-videos via A Temporal Graph-guided Recommendation System</em>”, <strong>ACM MM</strong>, 2019. <a href="https://anonymous1240.wixsite.com/alpine"><input type=button value="Code"></a></p>
-
-											<p>Liqiang Nie, <strong>Meng Liu</strong>, Xuemeng Song, “<em>Multimodal Learning toward Micro-Video Understanding</em>”, Synthesis Lectures on Image, Video, and Multimedia Processing, <font color="red">(book)</font>, 2019.</p>
-
-											<p>Xiang Wang, Xiangnan He, Yixin Cao, <strong>Meng Liu</strong>, Tat-Seng Chua, “<em>KGAT: Knowledge Graph Attention Network for Recommendation</em>”,  <strong>ACM KDD</strong>, 2019. <a href="https://github.com/xiangwang1223/knowledge_graph_attention_network"><input type=button value="Code"></a></p>
-
-											<p><strong>Meng Liu</strong>, Liqiang Nie, Xiang Wang, Qi Tian, Baoquan Chen, “<em>Online Data Organizer: Micro-video Categorization by Structure-guided Multimodal Dictionary Learning</em>”, <strong>IEEE TIP</strong>, 2019. <a href="http://acmmm17.wixsite.com/intimate"> <input type=button value="Code"> </a></p>
-
-											<p>Jichao Zhang, Yezhi Shu, Songhua Xu, Gongze Cao, Fan Zhong, <strong>Meng Liu</strong>, Xueying Qin, “<em>Sparsely Grouped Multi-Task Generative Adversarial Networks for Facial Attribute Manipulation</em>”, <strong>ACM MM</strong>, 2018.</p>
-
-											<p><strong>Meng Liu</strong>, Xiang Wang, Liqiang Nie, Baoquan Chen, Tat-Seng Chua, “<em>Attentive Moment Retrieval in Videos</em>”,  <strong>ACM SIGIR</strong>, 2018. <a href="https://sigir2018.wixsite.com/acrn"> <input type=button value="Code"> </a></p>
-
-											<p><strong>Meng Liu</strong>, Xiang Wang, Liqiang Nie, Qi Tian, Baoquan Chen, Tat-Seng Chua,  “<em>Cross-modal Moment Localization in Videos</em>”, <strong>ACM MM</strong>, 2018. <a href="https://acmmm18.wixsite.com/role"> <input type=button value="Code"> </a></p>
-
-											<p><strong>Meng Liu</strong>, Liqiang Nie, Meng Wang, Baoquan Chen, “<em>Towards Micro-video Understanding by Joint Sequential-Sparse Modeling</em>”, <strong>ACM MM</strong>, 2017. <a href="https://acmmm17.wixsite.com/eastern"> <input type=button value="Code"> </a> </p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /Publications FILTER -->
-
-					</div>
-				</div>
-				<!-- /Publications -->
-				<!-- Grants -->
-				<div class="arlo_tm_section" id="Grants">
-					<div class="arlo_tm_Grants_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>Grants</h3>
-								<span>My Grants</span>	
-								<div class="inner-content">
-									<p>NSFC, Multi-modal explicit relationship modeling for micro-video analysis, 2021-01–2023-12</p>
-
-									<p>NSFC, Research on Cross-modal Video Moment Localization for Complex Application Scenarios, 2024-01–2027-12</p>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<!-- /Grants -->
-
-				<!-- Professional Services -->
-				<div class="arlo_tm_section" id="Professional Services">
-					<div class="container">
-						<div class="arlo_tm_title_holder Professional Services">
-							<h3>Professional Services</h3>
-							<span>Professional Services</span>	
-							<div class="inner-content">
-								<p>Conference Reviewer for the International Conference on Multimedia Modeling, ACM Conference on Multimedia, Pacific-Rim Conference on Multimedia, CVPR, AAAI, COLING, ICCV, and WSDM.</p>
-	
-								<p>Journal Reviewer for Information Sciences, Journal of Visual Communication and Image Representation, Multimedia Systems Journal, Pattern Recognition, IEEE Transactions on Image Processing, Journal of Electronic Imaging, IEEE Transactions on Knowledge and Data Engineering, and IEEE Transactions on Multimedia.</p>
-							</div>					
-						</div>
-						</div>
-						
-					
-				</div>
-				<!-- /Professional Services -->
-
-				<!-- Awards -->
-				<div class="arlo_tm_section" id="Awards">
-					<div class="arlo_tm_portfolio_wra">
-						<div class="container">
-							<div class="arlo_tm_title_holder news">
-								<h3>Honors & Awards</h3>
-								<span>My Awards'Information</span>
-								<div class="inner-content">
-									<p>CVPR Ego-Schema Challenge First Place, 2024</p>
-									
-									<p>CVPR Ego-NLQ Challenge Second Place, 2024</p> 
-									
-									<p>ACM MM Conversational Head Generation Challenge Track1 The First Place, 2023</p>
-		
-									<p>ACM MM Conversational Head Generation Challenge Track1 Bronze Award and People’s Selection Awards, 2022</p>
-		
-									<p>ACM MM Conversational Head Generation Challenge Track2 Silver Medal, 2022</p>
-		
-									<p>Outstanding Reviewer Award for IEEE TMM, 2021</p>
-		
-									<p>ACM SIGIR Best Student Paper Award, 2021</p>
-		
-									<p>ACM China Council SIGMM Chapter Doctoral Dissertation Award, 2020</p>
-		
-									<p>Shandong Association of Artificial Intelligence Excellent Doctoral Dissertation Award, 2020</p>
-		
-									<p>ACM SIGIR 18 Student Travel Grant, 2018</p>
-		
-									<p>ACM MM 18 Student Travel Grant, 2018</p>
-		
-									<p>Outstanding Graduate Student at Shandong University, 2018</p>
-		
-									<p>First Class Doctoral Academic Scholarship at Shandong University, 2018</p>
-		
-									<p>Huawei Scholarship at Shandong University, 2018</p>
-		
-									<p>ACM MM 17 Student Travel Grant, 2017</p>
-		
-									<p>Doctoral Academic Scholarship at Shandong University, 2017</p>
-		
-									<p>Outstanding Graduates at Dalian University of Technology, 2016</p>
-		
-									<p>National Scholarship, 2015</p>
-		
-									<p>Dalian University of Technology Scholarship, 2013-2016</p>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<!-- /Awards -->
-
-				
-				
-			</div>
-		</div>
-		<!-- /RIGHTPART -->
-		
-		<a class="arlo_tm_totop" href="#"></a> 
-		
-	</div>
-</div>
-</div>
-<!-- / WRAPPER ALL -->
-	
-<!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
-<!-- /SCRIPTS -->
-
+  <footer>
+    <div class="container">© 2026 Meng Liu. Inspired by a concise academic homepage layout.</div>
+  </footer>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
-<style>
-    /* basic */
-html{
-  scroll-padding-top: 70px;
-}
-.top {
-    height: 70px;
-    background-color: #242424;
-    /* 源代码中应该还有一个1px的边框，所以height应该是69px，这里直接用border-box把边框的长度算在height里 */
-    box-sizing: border-box;
-    border-bottom: 1px solid #000;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 999;
-}
-.inner-content {
-	margin-top: 20px;
-	padding-left: 40px;
-}
-.topbar {
-    /* 浮动布局 */
-    display: flex;
-    /* 让left和right分别处于内容的左右端 */
-    justify-content: space-between;
-    width: 1200px;
-    height: 69px;
-    /* 设置行高，让topbar的子元素继承行高，进而让其子元素内容垂直居中 */
-    line-height: 69px;
-    margin: 0 auto;
-}
-.year-title{
-	margin-bottom: 15px;
-}
-.year-pub{
-	margin-bottom: 10px;
-}
-.topbar .top-left .logo a{
-    /* 将a变为块级元素，因为text-indent对行内元素无效 */
-    display: block;
-    text-indent: -9999px;
-}
-
-.topbar .top-left .logo{
-    width: 200px;
-}
-
-.topbar .top-left{
-    /* 浮动布局，让logo和列表排列在同一行上 */
-    display: flex;
-}
-
-.topbar .top-left .list{
-    /* 浮动布局，让list的每个li排列在同一行上 */
-    display: flex;
-    padding-left: 20px;
-    font-size: 14px;
-}
-.item{
-	font-size: large;
-}
-.topbar .top-left .list .item{
-    color: #ccc;
-    /* 每个a的文本内容距离a的左右边框20px */ 
-    padding: 0 20px;
-    display: block;
-    /* 限制红色小三角的移动空间 */
-    position: relative;
-}
-
-.topbar .top-left .list .item:hover,
-.topbar .top-left .list .item.active{
-    color: #fff;
-    background-color: #000;
-}
-
-.topbar .top-left .list .item.active::after{
-    content: "";
-    position: absolute;
-    /* 引入图片后一定要设置宽高，不然图标无法显示出来 */
-    width: 12px;
-    height: 7px;
-    bottom: -2px;
-    /* 居中 */
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.topbar .top-left .list .icon-hot::after{
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 19px;
-    /* 到这里上面已经出现了hot标志，下面进行偏移调整到合适的位置 */
-    top: 21px;
-    left: 80px;
-    /* 到这里时，hot标志太靠近“下载客户端了”，调整一下间距 */
-    margin-left: 10px;
-}
-.list{
-	list-style: none;
-}
-.topbar{
-    display: flex;
-    padding-right: 20px;
-    font-size: 12px;
-    /* 居中 */
-    align-items: center;
-}
-
-/* 登陆 */
-.topbar .login a{
-    color: #787878;
-}
-
-.topbar .login:hover a{
-    color: #fff;
-}
-
-.topbar .login a:hover{
-    color: #787878;
-    text-decoration: underline;
-}
-div p:not(:last-child) { 
-    padding-bottom: 15px;
-} 
-
-/* 创作者中心 */
-.topbar  .author a{
-    /* 为了设置宽高，将a设置为块级元素 */
-    display: block;
-    box-sizing: border-box;
-    color: #ccc;
-    width: 90px;
-    height: 32px;
-    /* 调整三个div的间距 */
-    margin: 0 20px;
-    /* 边框 */
-    border: 1px solid #4F4F4F;
-    border-radius: 20px;
-    /* 使文字跑到边框的中心处*/
-    line-height: 32px;
-    text-align: center;
-}
-
-/* 鼠标移动到创作者中心处文字和边框高亮 */
-.topbar  .author:hover a{
-    color: #fff;
-    border-color: #fff;
-}
-
-/* 搜索 */
-.topbar  .search{
-    /* 让input输入框浮动到search椭圆框的中间 */
-    display: flex;
-    align-items: center;
-    /* 让input输入框到search框的最后 */
-    justify-content: flex-end;
-    /* 此时input还有一点点在search外面，调整一下使其在search内部 */
-    padding-right: 10px;
-    /* 加入搜索图标后，图标有一部分被挡住了，在下面设置一下input框的长度 */
-    /* search椭圆框基本设置 */
-    width: 158px;
-    height: 32px;
-    border-radius: 30px;
-    background-color: #fff;
-}
-
-.topbar  .search input{
-    width: 118px;
-    font-size: 12px;
-}
-
-/* bottom */
-.bottom{
-    /* 背景设置 */
-    height: 35px;
-    background-color: #C20C0C;
-    border-bottom: 1px solid #a40011;
-    box-sizing: border-box;
-    /* 让子元素继承行高，使list元素中的文字居中 */
-    line-height: 35px;
-}
-
-.botbar{
-	/* 与顶部列表对齐*/
-    padding-left: 183px;
-    box-sizing: border-box;
-    width: 1100px;
-    margin: 0 auto;
-}
-
-
-.botbar .list{
-    /* 让list子元素浮动到一行排列 */
-    display: flex;
-}
-
-.botbar .list .item span{
-    /* span是行内元素，不能设置宽高，将其转换为块级元素 */
-    display: block;
-    /* 调整间距 */
-    padding: 0 13px;
-    margin: 7px 17px;
-    height: 20px;
-    /* 居中 */
-    line-height: 20px;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 21px;
-}
-
-.botbar .list .item:hover span,
-.botbar .list .item.active span{
-    background-color: #9B0909;
-}
-body,h1,ul,li{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-ul{
-	padding-left:40px
-}
-
-
-input{
-    outline: none;
-    border: none;
-}
-
-</style>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
