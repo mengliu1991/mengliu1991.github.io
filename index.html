@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
+  <title>Meng Liu | Academic Homepage</title>
   <style>
     :root {
       --bg: #ffffff;
@@ -15,6 +15,161 @@
     }
 
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(var(--maxw), calc(100% - 32px)); margin: 0 auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .nav {
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.94rem;
+    }
+    .nav-links a { color: #333; }
+
+    .hero {
+      padding: 24px 0 10px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .profile-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+    .profile-name {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .profile-title {
+      margin: 0 0 12px;
+      color: #333;
+      font-size: 1rem;
+    }
+    .bio p {
+      margin: 0 0 10px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+    .divider {
+      border-top: 1px solid #e8e8e8;
+      margin: 18px 0 0;
+    }
+
+    section {
+      padding: 16px 0 0;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.32rem;
+      font-weight: 700;
+    }
+    .news-list, .service-list, .awards-list, .pub-list {
+      padding-left: 0;
+      list-style: none;
+      margin: 0 0 10px 0;
+    }
+    .pageviews-box {
+      padding: 10px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pageviews-box strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+    .pageviews-box .counter {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .news-list, .service-list, .awards-list, .pub-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .news-list li, .service-list li, .awards-list li {
+      margin: 0 0 7px;
+    }
+    .date {
+      font-weight: 700;
+    }
+    .pub-year {
+      margin: 26px 0 12px;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: #0f172a;
+      padding: 7px 12px;
+      background: #f7f9fc;
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+      border-bottom: none;
+    }
+    .pub-list {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 2px;
+    }
+    .pub-item {
+      margin-bottom: 12px;
+      padding: 0 0 12px 14px;
+      border-bottom: 1px dashed #ececec;
+      position: relative;
+    }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #b7c6dd;
+    }
+    .pub-year + .pub-list {
+      border-left: 1px solid #eef2f7;
       padding-left: 14px;
       margin-left: 4px;
     }
@@ -79,7 +234,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">Welcome</div>
+      <div class="brand">Meng Liu</div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#news">News</a>
@@ -123,15 +278,16 @@
         <li><span class="date">[2025/02]</span> One paper was accepted by CVPR 2025.</li>
       </ul>
     </section>
-<section id="publications">
+
+    <section id="publications">
       <h2>Publications</h2>
 
       <div class="pub-year">2026</div>
       <ul class="pub-list">
-        <li class="pub-item"><span class="pub-title">Qilang Ye, Wei Zeng, <strong>Meng Liu<sup>*</sup></strong>, Jie Zhang, Yupeng Hu, Zitong Yu, Yu Zhou, “<em>When Eyes and Ears Disagree: Can MLLMs Discern Audio-Visual Confusion?</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="https://github.com/rikeilong/AudioVisual_Confusion/tree/main">Code</a></span></li>
-        <li class="pub-item"><span class="pub-title">Lian He, <strong>Meng Liu<sup>*</sup></strong>, Qilang Ye, Yu Zhou, Xiang Deng, Gangyi Ding, “<em>Task-Aware 3D Affordance Segmentation via 2D Guidance and Geometric Refinement</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="https://github.com/LianHe00/TASA-main">Code</a></span></li>
-        <li class="pub-item"><span class="pub-title">Qiaohui Chu, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yisen Feng, Haoxiang Shi, Liqiang Nie, “<em>Intention-Guided Cognitive Reasoning for Egocentric Long-Term Action Anticipation</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="https://github.com/CorrineQiu/INSIGHT">Code</a></span></li>
-        <li class="pub-item"><span class="pub-title">Haoyu Zhang, Qiaohui Chu, <strong>Meng Liu<sup>*</sup></strong>, Haoxiang Shi, Yaowei Wang, Liqiang Nie, “<em>Exo2Ego: Exocentric Knowledge Guided MLLM for Egocentric Video Understanding</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="https://reurl.cc/Ebpyrm">Code</a></span></li>
+        <li class="pub-item"><span class="pub-title">Qilang Ye, Wei Zeng, <strong>Meng Liu<sup>*</sup></strong>, Jie Zhang, Yupeng Hu, Zitong Yu, Yu Zhou, “<em>When Eyes and Ears Disagree: Can MLLMs Discern Audio-Visual Confusion?</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
+        <li class="pub-item"><span class="pub-title">Lian He, <strong>Meng Liu<sup>*</sup></strong>, Qilang Ye, Yu Zhou, Xiang Deng, Gangyi Ding, “<em>Task-Aware 3D Affordance Segmentation via 2D Guidance and Geometric Refinement</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
+        <li class="pub-item"><span class="pub-title">Qiaohui Chu, Haoyu Zhang, <strong>Meng Liu<sup>*</sup></strong>, Yisen Feng, Haoxiang Shi, Liqiang Nie, “<em>Intention-Guided Cognitive Reasoning for Egocentric Long-Term Action Anticipation</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
+        <li class="pub-item"><span class="pub-title">Haoyu Zhang, Qiaohui Chu, <strong>Meng Liu<sup>*</sup></strong>, Haoxiang Shi, Yaowei Wang, Liqiang Nie, “<em>Exo2Ego: Exocentric Knowledge Guided MLLM for Egocentric Video Understanding</em>”, <strong>AAAI</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
         <li class="pub-item"><span class="pub-title">Yunxiao Wang, <strong>Meng Liu<sup>*</sup></strong>, Wenqi Liu, Xuemeng Song, Bin Wen, Fan Yang, Tingting Gao, Di Zhang, Guorui Zhou, Liqiang Nie, “<em>TIME: Temporal-Sensitive Multi-Dimensional Instruction Tuning and Robust Benchmarking for Video-LLMs</em>”, <strong>AAAI</strong>, 2026. <span class="highlight-red">(Oral)</span></span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
         <li class="pub-item"><span class="pub-title">Yichen Zeng, Hebaixu Wang, <strong>Meng Liu<sup>*</sup></strong>, Yu Zhou, Chen Gao, Kehan Chen, Gongping Huang, “<em>Semantic Audio-Visual Navigation in Continuous Environments</em>”, <strong>CVPR</strong>, 2026.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
       </ul>
@@ -157,7 +313,6 @@
         <li class="pub-item"><span class="pub-title">Haitao Shi, <strong>Meng Liu<sup>*</sup></strong>, Xiaoxuan Mu, Xuemeng Song, Yupeng Hu, and Liqiang Nie, “<em>Breaking Through the Noisy Correspondence: A Robust Model for Image-Text Matching</em>”, <strong>ACM TOIS</strong>, 2024.</span><span class="pub-links"><a class="pub-btn" href="#">Code</a></span></li>
       </ul>
     </section>
-  
 
     <section id="service">
       <h2>Professional Services</h2>
@@ -184,10 +339,16 @@
     </section>
   </main>
 
-  <section id="pageviews" style="padding-top: 4px; text-align: left; transform: scale(0.5); transform-origin: left top; width: 50%;">
-      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=dXjn-wph0tO3qsPQSdoY5ydzjOQvAmsUwyFAgLiUe04&cl=ffffff&w=a"></script>
+  <section id="pageviews" style="padding-top: 4px; padding-bottom: 8px; display: flex; justify-content: center; width: 100%;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;">
+        <div style="transform: scale(0.5); transform-origin: center top; display: flex; justify-content: center; max-height: 90px; overflow: hidden;">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=dXjn-wph0tO3qsPQSdoY5ydzjOQvAmsUwyFAgLiUe04&cl=ffffff&w=a"></script>
+        </div>
+        <div style="font-size: 12px; color: #666; text-align: center;">
+          <a href="https://clustrmaps.com/site/1brkr" target="_blank" rel="noopener noreferrer">View visitor map</a>
+        </div>
+      </div>
     </section>
-  </main>
 
   <footer>
     <div class="container">© 2026 Meng Liu. Inspired by a concise academic homepage layout.</div>
