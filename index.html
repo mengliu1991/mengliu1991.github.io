@@ -235,10 +235,46 @@
       font-size: 0.9rem;
     }
 
-    /* 隐藏地图中“近1个月”的日期和统计文字 */
+     /* 地图容器 */
+    #pageviews {
+      position: relative;
+      padding-top: 0;
+      text-align: left;
+      transform: scale(0.78);
+      transform-origin: left top;
+      width: 78%;
+      align-self: start;
+    }
+
+    /* 覆盖到地图左上角，替代原来的近1个月信息 */
+    .pageviews-overlay {
+      position: absolute;
+      top: 10px;
+      left: 14px;
+      z-index: 10;
+      color: var(--muted);
+      font-size: 0.95rem;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 2px 8px;
+      border-radius: 6px;
+      line-height: 1.4;
+      pointer-events: none;
+    }
+
+    .pageviews-overlay strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .pageviews-overlay .counter {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* 尽量隐藏地图自带的近1个月日期和统计 */
     #pageviews .mapmyvisitors-date,
     #pageviews .mapmyvisitors-visitors {
-      display: none !important;
+      visibility: hidden !important;
     }
 
     @media (max-width: 860px) {
@@ -303,8 +339,8 @@
           </ul>
         </div>
 
-         <div id="pageviews" style="padding-top: 0; text-align: left; transform: scale(0.78); transform-origin: left top; width: 78%; align-self: start;">
-          <div class="pageviews-box">
+         <div id="pageviews">
+          <div class="pageviews-overlay">
             Total pageviews:
             <strong><span id="busuanzi_value_site_pv" class="counter"></span></strong>
           </div>
